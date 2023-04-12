@@ -47,7 +47,8 @@ export const handleRequest: HandleRequest = async function (request: HttpRequest
 
   let prompt = decoder.decode(request.body)
 
-  console.log('promptRequest')
+  console.log('Received prompt:', prompt);
+
   var promptRequest: ChatGPTCompletionRequest = {
     model: 'gpt-3.5-turbo',
     messages: [
@@ -62,7 +63,6 @@ export const handleRequest: HandleRequest = async function (request: HttpRequest
     ]
   }
 
-  console.log('fetch')
   var response = await fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',
     body: new TextEncoder().encode(JSON.stringify(promptRequest)).buffer,
@@ -72,7 +72,6 @@ export const handleRequest: HandleRequest = async function (request: HttpRequest
     }
   });
 
-  console.log('response')
   if (!response.ok) {
     console.log('Error making chat request:', response.status, response.statusText);
     console.log(await response.text());
@@ -81,7 +80,6 @@ export const handleRequest: HandleRequest = async function (request: HttpRequest
     }
   }
 
-  console.log('completionResponse')
   const completionResponse = await response.json() as ChatGPTCompletionResponse;
 
   return {
