@@ -1,0 +1,17 @@
+spin_manifest_version = "1"
+authors = ["Matthew Fisher <matt.fisher@fermyon.com>"]
+description = ""
+name = "chatgpt-on-spin"
+trigger = { type = "http", base = "/" }
+version = "0.1.0"
+
+[[component]]
+id = "chatgpt-on-spin"
+source = "target/spin-http-js.wasm"
+exclude_files = ["**/node_modules"]
+files = ["settings.json"]
+allowed_http_hosts = ["https://api.openai.com"]
+[component.trigger]
+route = "/..."
+[component.build]
+command = "npm run build"
