@@ -10,10 +10,11 @@ TypeScript using Spin and Fermyon Cloud.
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 - a free [Fermyon Cloud](https://cloud.fermyon.com) account
 
-Add your OpenAI [API key](https://platform.openai.com/docs/api-reference/authentication) into `settings.json`, then
+Add your OpenAI [API key](https://platform.openai.com/docs/api-reference/authentication) into `settings-example.json`, then
 build and deploy the application to [Fermyon Cloud](https://fermyon.com/cloud):
 
 ```console
+$ mv settings-example.json settings.json
 $ npm install
 $ spin build
 $ spin login
