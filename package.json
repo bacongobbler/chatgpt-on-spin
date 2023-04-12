@@ -8,8 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Matthew Fisher <matt.fisher@fishworks.io>",
+  "license": "Apache-2.0",
   "devDependencies": {
     "@fermyon/spin-sdk": "^0.4.1",
     "ts-loader": "^9.4.1",
