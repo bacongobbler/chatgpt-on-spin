@@ -14,12 +14,12 @@ Add your OpenAI [API key](https://platform.openai.com/docs/api-reference/authent
 build and deploy the application to [Fermyon Cloud](https://fermyon.com/cloud):
 
 ```console
-$ mv settings-example.json settings.json
+$ cp settings-example.json settings.json
 $ npm install
 $ spin build
 $ spin login
 $ spin deploy
-Uploading chatgpt-on-spin version 0.1.0+r39d23bf0...
+Uploading chatgpt-on-spin version 0.2.0+r39d23bf0...
 Deploying...
 Waiting for application to become ready.......... ready
 Available Routes:
