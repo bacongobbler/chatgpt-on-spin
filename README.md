@@ -19,22 +19,22 @@ $ npm install
 $ spin build
 $ spin login
 $ spin deploy
-Uploading chatgpt-on-spin version 0.2.0+r39d23bf0...
+Uploading chatgpt version 0.2.0+r39d23bf0...
 Deploying...
 Waiting for application to become ready.......... ready
 Available Routes:
-  chatgpt-on-spin: https://chatgpt-on-spin-<your-url>.fermyon.app (wildcard)
+  chatgpt: https://chatgpt-<your-url>.fermyon.app (wildcard)
 ```
 
 Usage:
 
 ```console
-$ curl https://chatgpt-on-spin-<your-url>.fermyon.app/assistant -XPOST -d 'Which male artist has won the most Grammys?'
+$ curl https://chatgpt-<your-url>.fermyon.app/assistant -XPOST -d 'Which male artist has won the most Grammys?'
 Georg Solti
 ```
 
 ```console
-$ curl https://chatgpt-on-spin-<your-url>.fermyon.app/roll/4d6
+$ curl https://chatgpt-<your-url>.fermyon.app/roll/4d6
 Results: 3, 5, 2, 6
 Total: 16
 ```
