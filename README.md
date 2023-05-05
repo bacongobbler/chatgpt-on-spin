@@ -29,6 +29,12 @@ Available Routes:
 Usage:
 
 ```console
-$ curl https://chatgpt-on-spin-<your-url>.fermyon.app -XPOST -d 'Which male artist has won the most Grammys?'
+$ curl https://chatgpt-on-spin-<your-url>.fermyon.app/assistant -XPOST -d 'Which male artist has won the most Grammys?'
 The male artist who has won the most Grammys is Georg Solti, a Hungarian-British conductor, who won 31 Grammys during his career.
+```
+
+```console
+$ curl https://chatgpt-on-spin-<your-url>.fermyon.app/roll/4d6
+Results: 4, 2, 5, 4
+Total: 15
 ```
