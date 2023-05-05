@@ -30,11 +30,11 @@ Usage:
 
 ```console
 $ curl https://chatgpt-on-spin-<your-url>.fermyon.app/assistant -XPOST -d 'Which male artist has won the most Grammys?'
-The male artist who has won the most Grammys is Georg Solti, a Hungarian-British conductor, who won 31 Grammys during his career.
+Georg Solti
 ```
 
 ```console
 $ curl https://chatgpt-on-spin-<your-url>.fermyon.app/roll/4d6
-Results: 4, 2, 5, 4
-Total: 15
+Results: 3, 5, 2, 6
+Total: 16
 ```
